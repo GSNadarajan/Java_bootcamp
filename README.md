@@ -16,7 +16,7 @@ It is a collection or order of statements to make a program, such as:
 3. Add the two numbers and store in a third variable
 4. Print the result
 
-This order of statements is called Procedural Programming.
+This order of statements is called Procedural Programming. 
 
 ### <span style="color:orange">Functional Programming</span>
 Writing a program only with pure functions and first-class functions.
