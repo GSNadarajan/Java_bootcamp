@@ -1,4 +1,4 @@
-# JAVA DSA
+# <span style="color:blue">JAVA DSA</span>
 
 ## Day 1: 8/12/2023
 
@@ -8,7 +8,7 @@ Programming is divided into three categories:
 2. **Functional Programming**
 3. **Object-Oriented Programming Language (OOPS)**
 
-### Procedural Programming
+### <span style="color:green">Procedural Programming</span>
 It is a collection or order of statements to make a program, such as:
 
 1. Get the first number
@@ -18,10 +18,10 @@ It is a collection or order of statements to make a program, such as:
 
 This order of statements is called Procedural Programming.
 
-### Functional Programming
+### <span style="color:orange">Functional Programming</span>
 Writing a program only with pure functions and first-class functions.
 
-### Object-Oriented Programming Language
+### <span style="color:red">Object-Oriented Programming Language</span>
 Revolves around objects. For example, "Human" is a class, and "Nattu" is an object or instance of the class "Human" with properties specific to that class. Code + Data = Object. It is easier to develop, debug, and reuse and maintain.
 
 ### Static vs Dynamic
@@ -35,10 +35,9 @@ Revolves around objects. For example, "Human" is a class, and "Nattu" is an obje
 
 For example, when declaring a variable with `a = 10;`, there are two memory types involved: stack memory and heap memory. Here, `a` is a reference variable stored in stack memory, and `10` is an object stored in heap memory.
 
-### Garbage Collection
+### <span style="color:purple">Garbage Collection</span>
 If an object has no reference variable, it will be moved to garbage collection. For instance:
 
 ```java
 a = 10;       // Initially, 'a' is pointing to 10
 a = "nattu";  // Now 'a' is pointing to "nattu," and the 10 will be moved to the garbage collection
-```
