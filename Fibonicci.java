@@ -16,6 +16,7 @@ public class Fibonicci {
             n2 = n3;
             i++;       
         }
+        in.close();
     
     }
 }
