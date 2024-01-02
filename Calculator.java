@@ -33,7 +33,7 @@ public class Calculator{
                     System.out.println("Invalid operator");  
                     break;
                 }
-                // in.close();
+                in.close();
                 System.out.println(ans);
 
                 
