@@ -2,6 +2,12 @@ import java.util.Scanner;
 
 public class Method{
     public static void main(String[] args) {
+        int sum = sum();
+        System.out.println("The sum is  "+ sum) ;
+
+    }
+
+    public static int sum(){
         // Q: take input of 2 numbers and print the sum
 
         Scanner in = new Scanner(System.in);
@@ -10,7 +16,8 @@ public class Method{
         System.out.print("Enter the second number: ");
         int num2 = in.nextInt();
         int sum = num1 + num2;
-        System.out.println("The sum is  "+ sum) ;
+        in.close();
+        return sum;
 
     }
 }
