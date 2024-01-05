@@ -10,7 +10,8 @@ public class VarArgs {
         
     }
 
-    static void varArgs(int a, int ...v){
+    static void varArgs(int a, int b,  int ...v){
+        System.out.println("The value of a: " + a);
         System.out.println("The value of a: " + a);
         System.out.println(Arrays.toString(v));
 
