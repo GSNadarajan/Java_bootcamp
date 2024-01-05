@@ -5,7 +5,7 @@ public class Amstrong {
 
         int result = 0;
 
-        while(num > 0){
+        while(num > 0){  // checking till the last number
             int rem = num % 10;
             result = result + rem * rem * rem;
             num = num /10;

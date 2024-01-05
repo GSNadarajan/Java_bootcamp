@@ -26,6 +26,7 @@ Revolves around objects. For example, "Human" is a class, and "Nattu" is an obje
 
 ### Static vs Dynamic
 
+
 | Static                                | Dynamic                               |
 | ------------------------------------- | ------------------------------------- |
 | Perform type checking at compile time | Perform type checking at run time     |
@@ -33,7 +34,7 @@ Revolves around objects. For example, "Human" is a class, and "Nattu" is an obje
 | Declare data type before use          | No need to declare datatype of variables |
 | More control                          | Saves time in writing code but might give error at runtime |
 
-For example, when declaring a variable with `a = 10;`, there are two memory types involved: stack memory and heap memory. Here, `a` is a reference variable stored in stack memory, and `10` is an object stored in heap memory.
+For example, when declaring a variable with `a = 10;`, there are two memory types involved: stack memory and heap memory. Here, `a` is a reference variable stored in stack memory, and `10` is an object stored in heap memory
 
 ### <span style="color:purple">Garbage Collection</span>
 If an object has no reference variable, it will be moved to garbage collection. For instance:
@@ -41,3 +42,51 @@ If an object has no reference variable, it will be moved to garbage collection. 
 ```java
 a = 10;       // Initially, 'a' is pointing to 10
 a = "nattu";  // Now 'a' is pointing to "nattu," and the 10 will be moved to the garbage collection
+
+### syntax of java code
+
+// The class name should be same as the file name
+// This is the entry point of this class Main and static represents no need to create objects for this class to run this main function... public represents access specifier... void represents it return type.... String[] args represents command line argument for accessing arrays string in command line argument
+
+public class Main{ 
+    public static void main(String[] args){ 
+        int age = 21; // int is the data type and age represents reference variable and 21 is the object
+        system.out.println(age); // system is the class and out is the variable in the function println()
+    }
+}
+
+### Conditions in java
+
+// if else conditional statement
+
+if(age == 18){
+     system.out.println("Eligible for vote");  // condition for checking eligibility of vote
+}
+else{
+     system.out.println("Not eligible for vote");
+}
+
+### Loops in java
+
+// for loop
+
+// for loop will do the same thing where while loop do.. but we should use for loop for finite conditions... 
+// if we don't know the end (infinite loop) should use while loop
+
+for(int i = 0; i < 10; i++){
+     system.out.println(i); // It will print from 0 to 10
+}
+
+// while loop
+
+int i = 0;
+while(i < 10){
+     system.out.println(i);
+     i++:
+}
+
+// do while loop
+
+do()
+
+
