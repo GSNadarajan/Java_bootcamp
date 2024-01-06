@@ -87,6 +87,28 @@ while(i < 10){
 
 // do while loop
 
-do()
+do(
+     // do initially
+)
+while(
+     // check condition
+)
+
+
+### ARRAYS
+
+// syntax
+
+datatype[] variable_name = new datatype[size];
+
+// Example (Store 5 roll numbers):
+
+int[] rnos = new int[5];  
+//or 
+int[] rnos1 = {21,23,34,35} 
+
+
+// int[] ros; // Declaration of array. ros is getting defined in the stack
+// ros = new int[4]; // Initialisation: actually here object is being created in heap memory
 
 
