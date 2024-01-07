@@ -25,7 +25,7 @@ public class Input {
         for(int i = 0; i < name.length; i++){
             name[i] = in.next();
         }
-
+        name[0] = "Natttu";
         System.out.println(Arrays.toString(name));
 
         in.close();
