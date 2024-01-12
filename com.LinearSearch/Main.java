@@ -16,20 +16,18 @@ public class Main {
     }
 
     static int linear_search(int[] arr, int target){  // It will return the index value of the searching element in the array
-
-        if(arr.length == 0){  // If no element found in the array
+        if(arr.length == 0){
             return -1;
         }
 
         for(int i = 0; i < arr.length; i++){
             if(arr[i] == target){
-                System.out.println("Element found at the "+ arr[i] + " index");
-                return arr[i];
-                
+                return target;
             }
         }
-        System.out.println("Element not found");
+
         return -1;
+
     }   
 
 
