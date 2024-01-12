@@ -34,6 +34,23 @@ public class Searchin2D {
         return null;
     }
 
+       static int max_in_2D(int[][] arr){
+        if(arr.length == 0){
+            return 0;
+        }
+
+        int max= 0;
+        for(int row = 0; row < arr.length; row++){
+            for(int col = 0; col < arr[row].length; col++){
+                if(arr[row][col] > max){
+                    max = arr[row][col];
+                }
+            }
+        }
+
+        return max;
+    }
+
 
     
 }
