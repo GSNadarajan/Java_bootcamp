@@ -12,17 +12,18 @@ public class Reverse {
     static int[] reverse(int[] arr){
         int start = 0;
         int end = arr.length - 1;
+        int temp = 0;
 
-        while(start < end){
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
+        while(start < end){  // here start and end represent the indices of the array not array element
+            for(int i = 0; i < arr.length; i++){
+                temp = arr[start];
+                arr[start] = arr[end];
+                arr[end] = temp;
+            }
             start++;
             end--;
-        }
 
-        
+        }
         return arr;
     }
-    
 }
