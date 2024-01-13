@@ -11,6 +11,7 @@ public class Reverse {
             ans = ans * 10 + rem;
             num = num / 10;
        }
+       in.close();
        System.out.println(ans);
     }
     

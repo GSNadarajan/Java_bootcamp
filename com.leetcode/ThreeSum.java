@@ -26,7 +26,7 @@ public class ThreeSum {
             }
         }
         return new ArrayList<>(result);
-    }
+    } 
 
     public static void main(String[] args) {
         ThreeSum solution = new ThreeSum();

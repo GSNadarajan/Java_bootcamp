@@ -12,7 +12,7 @@ public class Changevalue {
 
     public static int[] change(int[] arr){
         arr[0] = 6;
-        arr[4] = 00344;
+        arr[4] =454;
         return arr;
     }
 
