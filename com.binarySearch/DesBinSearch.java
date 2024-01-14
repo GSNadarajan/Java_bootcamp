@@ -1,6 +1,7 @@
 
 public class DesBinSearch {
     public static void main(String[] args) {
+        // Finding the target in descending ordered sorted array
         int arr[] = {9,8,7,6,5,3,2,1};
         int target = 5;
         int result = des_bin_search(arr, target);
@@ -13,6 +14,7 @@ public class DesBinSearch {
         int end = arr.length - 1;
 
         while(start <= end){
+            // Here we will update the middle element for each check
             int mid = start + (end - start)/2;
 
             if(target > arr[mid]){
