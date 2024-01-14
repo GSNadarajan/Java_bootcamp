@@ -2,6 +2,7 @@ public class BinSearch {
     public static void main(String[] args) {
         //Binary search
 
+        // It will be efficient for searching element in an array
         // Sort the given array ( either ascending or descending order)
         // find the middle element to split the array into two half
         // if the target element is lesser than middle then make a search with first half else search with second half
