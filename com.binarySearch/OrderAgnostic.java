@@ -1,6 +1,6 @@
 public class OrderAgnostic {
     public static void main(String[] args) {
-        // It will basically find the array which is in ascending order or descending order 
+        // It will basically find the array which is in ascending order or descending order in the array 
         int[] arr = { 1,2,3,4,5,6};
         int target = 4;
         int result = order_agnosticBS(arr, target);
