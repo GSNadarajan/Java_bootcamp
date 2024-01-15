@@ -12,7 +12,7 @@ public class Swap {
 
     static int[] swap(int[] arr, int index1, int index2){
         int temp = arr[index1];
-        arr[index1] = arr[index2];
+        arr[index1] = arr[index2];  // swap these two varaiable
         arr[index2] = temp;
         return arr;
     }
