@@ -12,6 +12,7 @@ public class Main {
 
         int[] arr = { 11,12,14,15,17,19};
         int target = 13;
+        
         int result = ceiling(arr, target);
         System.out.println(result);
 
