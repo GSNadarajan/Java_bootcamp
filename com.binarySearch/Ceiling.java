@@ -4,7 +4,7 @@ public class Ceiling {
         int target = 5;
         // To find the nearest element to the target which is greater than or equal to the target
         int result = ceil(arr, target);
-        System.out.println(result);
+        System.out.println(result); 
     }
 
     static int ceil(int[] arr, int target) {

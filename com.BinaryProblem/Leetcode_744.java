@@ -24,6 +24,7 @@ public class Leetcode_744 {
             }
         }
 
+        
         // If the target is not found, return the element at 'start' index
         return arr[start];
     }
