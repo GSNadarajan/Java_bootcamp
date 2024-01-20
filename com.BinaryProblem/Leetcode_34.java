@@ -1,27 +1,33 @@
-import java.util.Arrays;
-
 public class Leetcode_34 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 4, 5, 6};
         int target = 4;
 
-        
-        
         int[] result = searchRange(arr, target);
         
         for (int num : result) {
             System.out.print(num + " ");
         }
     }
-
-    
-
-    public int[] searchRange(int[] arr, int target){
-        int start = 0;
-        int end = arr.length - 1;
-        // if no element is found
+    public static int[] searchRange(int[] arr, int target){
 
         int[] ans = {-1, -1};
+        // Check for first occurence if target first
+        int start = search(arr, target , true);
+        int end = search(arr, target , false);
+
+        ans[0] = start;
+        ans[1] = end;
+
+        return ans;
+    }
+    
+
+    public static int search(int[] arr, int target, boolean firstStartIndex){
+
+        int ans = -1;
+        int start = 0;
+        int end = arr.length - 1;
 
         while(start <= end){
             // find the middle element
@@ -36,7 +42,13 @@ public class Leetcode_34 {
                 start = mid + 1;
             }
             else{
-                return mid;
+                ans = mid;
+                if(firstStartIndex == true){
+                    end = mid -1;
+                }
+                else{
+                    start = mid + 1;
+                }
             }
         }
         return ans;
