@@ -1,19 +1,23 @@
 public class Leetcode_34 {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 4, 5, 6};
-        int target = 4;  // output {3,4}
+        //34. Find First and Last Position of Element in Sorted Array
+        //Input: nums = [5,7,7,8,8,10], target = 8
+        //Output: [3,4]
 
-        int[] result = searchRange(arr, target);
-        
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
+        //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+
+
+         int[] arr = {5,7,7,8,8,10};
+         int target = 7; //output [3,4]
+         int[] result = search_range(arr, target);
+         System.out.print("[" +result[0] + "," + result[1] + "]");
     }
-    public static int[] searchRange(int[] arr, int target){
 
-        int[] ans = {-1, -1};
-        // Check for first occurence if target first
-        int start = search(arr, target , true);
+    public static int[] search_range(int[] arr, int target){
+
+        int[] ans = {-1,-1};
+
+        int start = search(arr, target, true);
         int end = search(arr, target , false);
 
         ans[0] = start;
@@ -21,30 +25,26 @@ public class Leetcode_34 {
 
         return ans;
     }
-    
 
-    public static int search(int[] arr, int target, boolean firstStartIndex){
+    public static int search(int[] arr, int target , boolean firstStartIndex){
 
-        int ans = -1;
         int start = 0;
         int end = arr.length - 1;
+        int ans = -1;
 
         while(start <= end){
-            // find the middle element
-            // int mid = (start + end ) /2 
-            
-            int mid = start + (end - start) /2;
+            int mid = start + (end - start)/2;
 
             if(target < arr[mid]){
                 end = mid - 1;
             }
-            else if (target > arr[mid]){
+            else if(target > arr[mid]){
                 start = mid + 1;
             }
             else{
                 ans = mid;
-                if(firstStartIndex == true){
-                    end = mid -1;
+                if(firstStartIndex){
+                    end = mid - 1;
                 }
                 else{
                     start = mid + 1;
@@ -52,9 +52,7 @@ public class Leetcode_34 {
             }
         }
         return ans;
-        
     }
+    
+}
 
-
-     
-    }
