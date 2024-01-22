@@ -3,7 +3,7 @@ public class Leetcode_70 {
     public static void main(String[] args) {
         System.out.println(climbStairs(2)); // Output: 2
         System.out.println(climbStairs(3)); // Output: 3
-        System.out.println(climbStairs(6));
+        System.out.println(climbStairs(6)); // Output : 13
     }
 
     public static int climbStairs(int n) {
