@@ -1,10 +1,12 @@
 public class Mountain {
+      // https://leetcode.com/problems/peak-index-in-a-mountain-array/
+     // https://leetcode.com/problems/find-peak-element/
     public static void main(String[] args) {
-
+        int[] arr = {0,10,5,2};
+        System.out.println(peakIndexInMountainArray(arr));
     }
-    // https://leetcode.com/problems/peak-index-in-a-mountain-array/
-    // https://leetcode.com/problems/find-peak-element/
-    public int peakIndexInMountainArray(int[] arr) {
+  
+    public static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length - 1;
 
