@@ -6,6 +6,7 @@ public class Leetcode_70 {
         System.out.println(climbStairs(6)); // Output : 13
     }
 
+    
     public static int climbStairs(int n) {
         if (n == 1) {
             return 1;
