@@ -5,6 +5,7 @@ public class Leetcode_162 {
         int[] arr = {1, 2, 3, 1 };
         // output : 2
         int result = peak_index(arr);
+        
         System.out.println(result);
 
 
