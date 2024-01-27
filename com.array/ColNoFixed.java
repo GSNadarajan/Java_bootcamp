@@ -21,6 +21,8 @@ public class ColNoFixed {
              System.out.println();
         }
 
+        in.close();
+
         // for(int[] num: arr){
         //     System.out.println(num);
         // }

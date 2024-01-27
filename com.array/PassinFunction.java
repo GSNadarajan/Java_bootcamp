@@ -11,6 +11,7 @@ public class PassinFunction {
     // System.out.println("Values from the change() function: " + result);
     System.out.println("After converting into string");
     System.out.println(Arrays.toString(change(age)));
+    System.out.println(result);
     
     }
 
