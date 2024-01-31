@@ -16,6 +16,7 @@ public class Leetcode_1095 {
         }
         
         return orderAgnosticBS(arr, target, peak + 1, arr.length - 1);
+        
     }
 
     public static int peak_index(int[] arr){
