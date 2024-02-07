@@ -2,7 +2,8 @@
 import java.util.*;
 
 public class ThreeSum {
-    public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSum(int[] nums) {// New array list
+
         
 
         if (nums.length == 0 || nums.length < 3) return new ArrayList<>();
