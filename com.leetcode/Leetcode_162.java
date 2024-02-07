@@ -19,6 +19,7 @@ public class Leetcode_162 {
 
         // output : 2
         int result = peak_index(arr);
+        //result  of the peak value
         
         System.out.println(result);
 
