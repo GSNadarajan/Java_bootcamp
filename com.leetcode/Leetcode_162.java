@@ -3,7 +3,8 @@ public class Leetcode_162 {
         //https://leetcode.com/problems/find-peak-element/description/
         
         int[] arr = {1, 2, 3, 1 };
-        //First iteration
+
+        //First iteration with example
         //start = index(0) , end = index(3) (0+3/2 = 1) ==> here element 2 is in the first index (mid = 1) 
         // checking condition (2 > 3) {false} updating start to mid + 1 (start = 3)
 
